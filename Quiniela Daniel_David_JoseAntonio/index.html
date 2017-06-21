@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<title>QUINIELA JAVASCRIPT</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+	<h1>LA QUINIELA</h1>
+		<h2>1ª LIGA SANTANDER / 2ª LIGA 123 / JORNADA 45</h2>
+		<img class="imagen" src="imagenes/logo.jpg">
+
+		<div class="contenedor">
+
+		<div>
+
+			<span>Real Madrid-Barça... 1</span>
+			<label><input type="radio" name="puno" id="uno_uno" value="1" onclick="p1()" >1</label>
+			<label><input type="radio" name="puno" id="x_uno" value="X" onclick="p1()">X</label>
+			<label><input type="radio" name="puno" id="dos_uno" value="2" onclick="p1()">2</label><span id="acertado"></span>
+		</div>
+			
+		<div>
+
+			<span>Albacete-Badalona..... 2</span><label><input type="radio" name="pudos" id="uno_dos" value="1" onclick="p2()" >1</label>
+			<label><input type="radio" name="pudos" id="x_dos" value="X" onclick="p2()">X</label>
+			<label><input type="radio" name="pudos" id="dos_dos" value="2" onclick="p2()">2</label><span id="acertado1"></span>
+			
+
+		</div>	
+
+		<div>
+
+			<span>Pamplona-Grama........3</span><label><input type="radio" name="putres" id="uno_tres" value="1" onclick="p3()" >1</label>
+			<label><input type="radio" name="putres" id="x_tres" value="X" onclick="p3()">X</label>
+			<label><input type="radio" name="putres" id="dos_tres" value="2" onclick="p3()">2</label><span id="acertado2"></span>
+			
+
+		</div>
+
+		<div>
+
+			<span>At.Madrid-Zaragoza...4</span><label><input type="radio" name="pucuatro" id="uno_cuatro" value="1" onclick="p4()" >1</label>
+			<label><input type="radio" name="pucuatro" id="x_cuatro" value="X" onclick="p4()">X</label>
+			<label><input type="radio" name="pucuatro" id="dos_cuatro" value="2" onclick="p4()">2</label><span id="acertado3"></span>
+			
+
+		</div>
+		<div class="separacion"></div>
+		<div>
+
+			<span>Osasuna-Eibar.............5</span><label><input type="radio" name="pucimcp" id="uno_cinco" value="1" onclick="p5()" >1</label>
+			<label><input type="radio" name="pucinco" id="x_cinco" value="X" onclick="p5()">X</label>
+			<label><input type="radio" name="pucinco" id="dos_cinco" value="2" onclick="p5()">2</label><span id="acertado4"></span>
+			
+
+		</div>
+
+		<div>
+
+			<span>Mallorca-Ath.Club......6</span><label><input type="radio" name="puseis" id="uno_seis" value="1" onclick="p6()" >1</label>
+			<label><input type="radio" name="puseis" id="x_seis" value="X" onclick="p6()">X</label>
+			<label><input type="radio" name="puseis" id="dos_seis" value="2" onclick="p6()">2</label><span id="acertado5"></span>
+			
+
+		</div>
+
+		<div>
+
+			<span>Celta-Girona................7</span><label><input type="radio" name="pusiete" id="uno_siete" value="1" onclick="p7()" >1</label>
+			<label><input type="radio" name="pusiete" id="x_siete" value="X" onclick="p7()">X</label>
+			<label><input type="radio" name="pusiete" id="dos_siete" value="2" onclick="p7()">2</label><span id="acertado6"></span>
+			
+
+		</div>
+
+		<div>
+
+			<span>Sevilla-Betis..................8</span><label><input type="radio" name="puocho" id="uno_ocho" value="1" onclick="p8()" >1</label>
+			<label><input type="radio" name="puocho" id="x_ocho" value="X" onclick="p8()">X</label>
+			<label><input type="radio" name="puocho" id="dos_ocho" value="2" onclick="p8()">2</label><span id="acertado7"></span>
+			
+
+		</div>
+		<div class="separacion"></div>
+		<div>
+
+			<span>Valencia-Deportivo......9</span><label><input type="radio" name="punueve" id="uno_nueve" value="1" onclick="p9()" >1</label>
+			<label><input type="radio" name="punueve" id="x_nueve" value="X" onclick="p9()">X</label>
+			<label><input type="radio" name="punueve" id="dos_nueve" value="2" onclick="p9()">2</label><span id="acertado8"></span>
+			
+
+		</div>
+
+		<div>
+
+			<span>Málaga-Almería.........10</span><label><input type="radio" name="pudiez" id="uno_diez" value="1" onclick="p10()" >1</label>
+			<label><input type="radio" name="pudiez" id="x_diez" value="X" onclick="p10()">X</label>
+			<label><input type="radio" name="pudiez" id="dos_diez" value="2" onclick="p10()">2</label><span id="acertado9"></span>
+			
+
+		</div>
+
+		<div>
+
+			<span>Villarreal-Palmas...... 11</span><label><input type="radio" name="puonce" id="uno_once" value="1" onclick="p11()" >1</label>
+			<label><input type="radio" name="puonce" id="x_once" value="X" onclick="p11()">X</label>
+			<label><input type="radio" name="puonce" id="dos_once" value="2" onclick="p11()">2</label><span id="acertado10"></span>
+			
+
+		</div>
+		<div class="separacion"></div>
+		<div>
+
+			<span>Valencia-Leganés.......12</span><label><input type="radio" name="pudoce" id="uno_doce" value="1" onclick="p12()" >1</label>
+			<label><input type="radio" name="pudoce" id="x_doce" value="X" onclick="p12()">X</label>
+			<label><input type="radio" name="pudoce" id="dos_doce" value="2" onclick="p12()">2</label><span id="acertado11"></span>
+			
+
+		</div>
+
+		<div>
+
+			<span>Huesca-Córdoba........13</span><label><input type="radio" name="putrece" id="uno_trece" value="1" onclick="p13()" >1</label>
+			<label><input type="radio" name="putrece" id="x_trece" value="X" onclick="p13()">X</label>
+			<label><input type="radio" name="putrece" id="dos_trece" value="2" onclick="p13()">2</label><span id="acertado12"></span>
+			
+
+		</div>
+
+		<div>
+
+			<span>Sporting-Oviedo........14</span><label><input type="radio" name="pucatorce" id="uno_catorce" value="1" onclick="p14()" >1</label>
+			<label><input type="radio" name="pucatorce" id="x_catorce" value="X" onclick="p14()">X</label>
+			<label><input type="radio" name="pucatorce" id="dos_catorce" value="2" onclick="p14()">2</label><span id="acertado13"></span>
+			
+
+		</div>
+		<div class="separacion"></div>
+		<div>
+
+			<span>Murcia-Cádiz.............15</span><label><input type="radio" name="puquince" id="uno_quince" value="1" onclick="p15()" >1</label>
+			<label><input type="radio" name="puquince" id="x_quince" value="X" onclick="p15()">X</label>
+			<label><input type="radio" name="puquince" id="dos_quince" value="2" onclick="p15()">2</label><span id="acertado14"></span>
+			
+
+		</div>
+		</div>
+		
+		<div class="boton">
+			<button onclick="comprobar()">Comprobar Resultados</button>
+			<a href="index.html"><button>Resetear Resultados</button></a>
+		</div>	
+
+		<div class="mensaje">
+
+			<p id="contar"></p>
+
+		</div>	
+	<footer>
+		<p>Confecció i Publicació de pàgines web. Programadors: Daniel Zazo, David García, José Antonio García. 24/05/2017</p>
+	</footer>	
+
+		
+	
+</body>
+</html>

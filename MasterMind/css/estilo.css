@@ -1,0 +1,66 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#caja{
+	width: 100%;
+	text-align: center;
+}
+
+#volverjugar{
+	visibility: hidden;
+}
+
+img{
+	width: 22px;
+	height: 22px;
+	margin: 5px;
+}
+
+#tabla{
+	position: relative;
+	width: 50%;
+	left: 40%;
+}
+
+td{
+	padding: 5px;
+	width: 40px;
+	height: 30px;
+	font-size: 14px;
+	border: 1px solid;
+}
+
+.compro{
+	border: 0;
+	width: 180px;
+
+}
+
+button{
+	margin: 10px;
+	padding: 10px;
+}
+
+#colores{
+	position: absolute;
+	width: 92px;
+	left: 25%;
+	top: 25%;
+	border: 1px solid;
+	padding: 5px;
+}
+
+#result{
+	position: absolute;
+	visibility: hidden;
+	width: 300px;
+	margin:0 auto;
+	background-color: #8EFA3C;
+	padding: 10px;
+}
+
+#volverjugar{
+	position: absolute;
+}

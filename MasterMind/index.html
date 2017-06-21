@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MasterMind</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="js/javascript.js">	</script>
+</head>
+<body>
+
+<div id=caja>
+<h1>MASTERMIND!!!</h1>
+	
+
+	<div id="result">
+		<p id="ganado"></p>
+		<p id="perdido"></p>
+		<p id="resultado"></p>
+	</div>
+
+	<button onclick="reinicio()" id="volverjugar">Volver a jugar</button>
+
+	<div id="colores">
+		<img src="img/Rojo.png" onclick="seleccionar('rojo')">
+		<img src="img/Azul.png" onclick="seleccionar('azul')">
+		<img src="img/Amarillo.png" onclick="seleccionar('amarillo')">
+		<img src="img/Negro.png" onclick="seleccionar('negro')">
+		<img src="img/Rosa.png" onclick="seleccionar('rosa')">
+		<img src="img/Verde.png" onclick="seleccionar('verde')">
+		<img src="img/Marron.png" onclick="seleccionar('marron')">
+		<img src="img/Morado.png" onclick="seleccionar('morado')">
+
+		<h2>Reglas:</h2>
+		<p><img src="img/todo.png"> = Has acertado color y posición</p>
+		<p><img src="img/color.png"> = Has acertado solo el color</p>
+		<p><img src="img/nada.png"> = No has acertado nada</p>
+
+	</div>
+
+	<br><button onclick="comprobar()" id="boton">Comprobar</button>
+	<button onclick="borrar()" id="botonborrar">Borrar Linea</button>
+
+	
+
+	<div id="tabla">
+		<table>
+			<tr id="tr1">
+				<td>Linea 1</td>
+				<td id="l1_0"><img src="img/zero.png"></td>
+				<td id="l1_1"><img src="img/zero.png"></td>
+				<td id="l1_2"><img src="img/zero.png"></td>
+				<td id="l1_3"><img src="img/zero.png"></td>
+				<td id="l1_p1" class="compro"></td>
+			</tr>
+
+			<tr id="tr2">
+				<td>Linea 2</td>
+				<td id="l2_0"><img src="img/zero.png"></td>
+				<td id="l2_1"><img src="img/zero.png"></td>
+				<td id="l2_2"><img src="img/zero.png"></td>
+				<td id="l2_3"><img src="img/zero.png"></td>
+				<td id="l2_p2" class="compro"></td>
+			</tr>
+
+			<tr id="tr3"> 
+				<td>Linea 3</td>
+				<td id="l3_0"><img src="img/zero.png"></td>
+				<td id="l3_1"><img src="img/zero.png"></td>
+				<td id="l3_2"><img src="img/zero.png"></td>
+				<td id="l3_3"><img src="img/zero.png"></td>
+				<td id="l3_p3" class="compro"></td>
+			</tr>
+
+			<tr id="tr4">
+				<td>Linea 4</td>
+				<td id="l4_0"><img src="img/zero.png"></td>
+				<td id="l4_1"><img src="img/zero.png"></td>
+				<td id="l4_2"><img src="img/zero.png"></td>
+				<td id="l4_3"><img src="img/zero.png"></td>
+				<td id="l4_p4" class="compro"></td>
+			</tr>
+
+			<tr id="tr5">
+				<td>Linea 5</td>
+				<td id="l5_0"><img src="img/zero.png"></td>
+				<td id="l5_1"><img src="img/zero.png"></td>
+				<td id="l5_2"><img src="img/zero.png"></td>
+				<td id="l5_3"><img src="img/zero.png"></td>
+				<td id="l5_p5" class="compro"></td>
+			</tr>
+
+			<tr id="tr6">
+				<td>Linea 6</td>
+				<td id="l6_0"><img src="img/zero.png"></td>
+				<td id="l6_1"><img src="img/zero.png"></td>
+				<td id="l6_2"><img src="img/zero.png"></td>
+				<td id="l6_3"><img src="img/zero.png"></td>
+				<td id="l6_p6" class="compro"></td>
+			</tr>
+
+			<tr id="tr7">
+				<td>Linea 7</td>
+				<td id="l7_0"><img src="img/zero.png"></td>
+				<td id="l7_1"><img src="img/zero.png"></td>
+				<td id="l7_2"><img src="img/zero.png"></td>
+				<td id="l7_3"><img src="img/zero.png"></td>
+				<td id="l7_p7" class="compro"></td>
+			</tr>
+
+			<tr id="tr8">
+				<td>Linea 8</td>
+				<td id="l8_0"><img src="img/zero.png"></td>
+				<td id="l8_1"><img src="img/zero.png"></td>
+				<td id="l8_2"><img src="img/zero.png"></td>
+				<td id="l8_3"><img src="img/zero.png"></td>
+				<td id="l8_p8" class="compro"></td>
+			</tr>
+
+			<tr id="tr9">
+				<td>Linea 9</td>
+				<td id="l9_0"><img src="img/zero.png"></td>
+				<td id="l9_1"><img src="img/zero.png"></td>
+				<td id="l9_2"><img src="img/zero.png"></td>
+				<td id="l9_3"><img src="img/zero.png"></td>
+				<td id="l9_p9" class="compro"></td>
+			</tr>
+
+			<tr id="tr10">
+				<td>Linea 10</td>
+				<td id="l10_0"><img src="img/zero.png"></td>
+				<td id="l10_1"><img src="img/zero.png"></td>
+				<td id="l10_2"><img src="img/zero.png"></td>
+				<td id="l10_3"><img src="img/zero.png"></td>
+				<td id="l10_p10" class="compro"></td>
+			</tr>
+		</table>
+	</div>
+
+</div>
+</body>
+</html>
